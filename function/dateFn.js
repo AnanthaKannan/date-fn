@@ -1,10 +1,57 @@
 const u = require('./util');
 module.exports ={
-    code1,code13, code101, code102
+    code1, code2, code3, code4, code5, code6, code7, code8, code9, code10, code12,
+    code13, code101, code102, code103,
+    code104, code105, code106, code107, code110,
+    code111, code112
 }
 
 function code1(date){
-    return date.short
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code2(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code3(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code4(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code5(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code6(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code7(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code8(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code9(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code10(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code11(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+}
+
+function code12(date){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
 }
 
 function code13(date){
@@ -48,38 +95,38 @@ function code111(date){
 }
 
 function code112(date){
-    return `${date.getFullYear()} ${ u.getMonth_(date) } ${ u.getDate_(date) }`;
+    return `${date.getFullYear()}${ u.getMonth_(date) }${ u.getDate_(date) }`;
 }
 
-function code104(date){
+// function code104(date){
     
-}
+// }
 
-function code104(date){
+// function code104(date){
     
-}
+// }
 
-function code104(date){
+// function code104(date){
     
-}
+// }
 
-function code104(date){
+// function code104(date){
     
-}
+// }
 
-function code104(date){
+// function code104(date){
     
-}
+// }
 
-function code104(date){
+// function code104(date){
     
-}
+// }
 
-function code104(date){
+// function code104(date){
     
-}
+// }
 
-function code104(date){
+// function code104(date){
     
-}
+// }
 

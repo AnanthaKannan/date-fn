@@ -9,7 +9,7 @@ function getDate_(date){
 }
 
 function getMonth_(date){
-    const getMonth = date.getMonth();
+    const getMonth = date.getMonth() + 1;
     if(getMonth < 10) return `0${getMonth}`;
     else return getMonth; 
 }

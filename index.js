@@ -1,34 +1,13 @@
-const dateFn = require('./function/dateFn')
-const date_ = new Date();
 
-let res = date(date_, 102);
-console.log(res);
-function date(date, code){
-    switch (code) {
-        case 1:
-            return dateFn.code1(date);
-            break;
-        
-        case 13:
-            return dateFn.code13(date); //Fri Oct 04 2019
-            break;
-        
-        case 1:
-            return dateFn.code1(date);
-            break;
-    
-        case 1:
-            return dateFn.code1(date);
-            break;
+const { date } = require('./route/date');
+const { time } =  require('./route/time');
 
-        case 101:
-            return dateFn.code101(date); 
-            break;
-        case 102:
-            return dateFn.code102(date); 
-            break;
-        default:
-            return "something went worng...!!";
-            break;
-    }
-}
+const date_ = new Date('1991-08-28 13:10:10');
+
+// date
+var res = date(date_, 111);
+// console.log(res);
+
+// time
+var res = time(date_, 14);
+console.log(res) 
