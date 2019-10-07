@@ -40,6 +40,7 @@ function code108(date, spl){
 
 function code109(date, spl){
     return `${u.getDate_(date)} ${u.getMonthShort(date)} ${date.getFullYear()}`;
+
 }
 
 function code110(date, spl){

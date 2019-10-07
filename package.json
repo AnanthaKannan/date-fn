@@ -7,7 +7,9 @@
     "test": "jest",
     "start": "nodemon index"
   },
-  "keywords": ["date-fn"],
+  "keywords": [
+    "date-fn"
+  ],
   "author": "AnanthaKannan",
   "license": "ISC",
   "devDependencies": {

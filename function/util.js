@@ -15,9 +15,22 @@ function getMonth_(date){
 }
 
 function getMonthShort(date){
-    return date.toLocaleString('default', { month: 'short' });
+    return  shotMonth()[date.getMonth()];
 }
 
 function getMonthLong(date){
-    return date.toLocaleString('default', { month: 'long' });
+    return  longMont()[date.getMonth()];
 }
+
+function shotMonth(){
+    return ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  	        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+}
+
+function longMont(){
+    return ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"];
+}
+
+
+
