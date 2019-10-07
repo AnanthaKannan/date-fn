@@ -1,20 +1,20 @@
 module.exports ={
-     code14, code24, code108, code114
+     code5, code6, code7, code8
 }
 
 
-function code14(date){
+function code5(date){
     return date.toLocaleString("en-US").slice(11);
 }
 
-function code24(date){
+function code6(date){
     return date.toLocaleString("en-US", { hour12: false }).slice(11);
 }
 
-function code108(date){
+function code7(date){
    return date.toLocaleString("en-US").slice(11, 15) + date.toLocaleString("en-US").slice(18);
 }
 
-function code114(date){
+function code8(date){
     return date.toLocaleString("en-US",  { hour12: false }).slice(11,16);
 }

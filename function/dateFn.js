@@ -1,132 +1,51 @@
 const u = require('./util');
 module.exports ={
-    code1, code2, code3, code4, code5, code6, code7, code8, code9, code10, code12,
-    code13, code101, code102, code103,
-    code104, code105, code106, code107, code110,
-    code111, code112
+    code101, code102, code103, code104, code105,
+    code106, code107, code108, code109, code110, code111
 }
 
-function code1(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+
+
+function code101(date, spl){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`.replace('/\/g', spl);
 }
 
-function code2(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+function code102(date, spl){
+    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear()}`.replace('/\/g', spl);
 }
 
-function code3(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+function code103(date, spl){
+    return `${ u.getMonth_(date) }/${date.getFullYear()}/${ u.getDate_(date) }`.replace('/\/g', spl);
 }
 
-function code4(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+function code104(date, spl){
+    return `${u.getDate_(date)}/${u.getMonth_(date)}/${date.getFullYear()}`.replace('/\/g', spl);
 }
 
-function code5(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+function code105(date, spl){
+    return `${u.getDate_(date)}/${date.getFullYear()}/${u.getMonth_(date)}`.replace('/\/g', spl);
 }
 
-function code6(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+function code106(date, spl){
+    return `${date.getFullYear()}/${u.getMonth_(date)}/${u.getDate_(date)}`.replace('/\/g', spl);
 }
 
-function code7(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
+function code107(date, spl){
+    return `${date.getFullYear()}/${u.getDate_(date)}/${u.getMonth_(date)}`.replace('/\/g', spl);
 }
 
-function code8(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
-}
-
-function code9(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
-}
-
-function code10(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
-}
-
-function code11(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
-}
-
-function code12(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear().toString().substr(2, 3)}`;
-}
-
-function code13(date){
+function code108(date, spl){
     return date.toDateString();
 }
 
-function code101(date){
-    return `${ u.getMonth_(date) }/${ u.getDate_(date) }/${date.getFullYear()}`;
-}
-
-function code102(date){
-    return `${date.getFullYear()}.${ u.getMonth_(date) }.${ u.getDate_(date) }`;
-}
-
-function code103(date){
-    return `${ u.getDate_(date) }/${ u.getMonth_(date) }/${date.getFullYear()}`;
-}
-
-function code104(date){
-    return `${ u.getDate_(date) }.${ u.getMonth_(date) }.${date.getFullYear()}`;
-}
-
-function code105(date){
-    return `${ u.getDate_(date) }-${ u.getMonth_(date) }-${date.getFullYear()}`;
-}
-
-function code106(date){
+function code109(date, spl){
     return `${u.getDate_(date)} ${u.getMonthShort(date)} ${date.getFullYear()}`;
 }
 
-function code107(date){
+function code110(date, spl){
     return `${u.getMonthShort(date)} ${u.getDate_(date)}, ${date.getFullYear()}`;
 }
 
-function code110(date){
-    return `${ u.getMonth_(date) }-${ u.getDate_(date) }-${date.getFullYear()}`;
-}
-
-function code111(date){
-    return `${date.getFullYear()}/${ u.getMonth_(date) }/${ u.getDate_(date) }`;
-}
-
-function code112(date){
+function code111(date, spl){
     return `${date.getFullYear()}${ u.getMonth_(date) }${ u.getDate_(date) }`;
 }
-
-// function code104(date){
-    
-// }
-
-// function code104(date){
-    
-// }
-
-// function code104(date){
-    
-// }
-
-// function code104(date){
-    
-// }
-
-// function code104(date){
-    
-// }
-
-// function code104(date){
-    
-// }
-
-// function code104(date){
-    
-// }
-
-// function code104(date){
-    
-// }
-
