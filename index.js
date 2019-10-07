@@ -2,15 +2,11 @@
 const { date } = require('./router');
 
 
-const date_ = new Date('1991-08-28 13:10:10');
+// const date_ = new Date('1991-08-28 13:10:10');
+// var res = date(date_, 106);
+// console.log(res);
 
-// date
-var res = date(date_, 64);
-console.log(res);
 
-// // time
-// var res = date(date_, 121);
-// console.log(res) 
 
 
 module.exports = {

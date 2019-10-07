@@ -59,6 +59,30 @@ function date(date, code, spl = '/'){
        
 
     // Date - Time
+        case 143:
+            return dateTimeFn.code143(date);
+            break;
+        case 144:
+            return dateTimeFn.code144(date);
+            break;
+        case 145:
+            return dateTimeFn.code145(date);
+            break;
+        case 146:
+            return dateTimeFn.code146(date);
+            break;
+        case 147:
+            return dateTimeFn.code147(date);
+            break;
+        case 148:
+            return dateTimeFn.code148(date);
+            break;
+        case 149:
+            return dateTimeFn.code149(date);
+            break;
+        case 150:
+            return dateTimeFn.code150(date);
+            break;
         case 151:
             return dateTimeFn.code151(date);
             break;

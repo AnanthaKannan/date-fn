@@ -2,21 +2,28 @@
 Date fn used to give the date and time format using a particular code.
 Please select the corresponding code that which you need the format.
 
+
 ### Date Example
  ```javascript
 const dateFn = require('date-fn')
 const date = new Date()
 
-dateFn.date(date, 1)
-//     08/28/91
+dateFn.date(date, 143)
+//   1991/08/28 1:10:10 PM 
 
-dateFn.date(date, 13)
+dateFn.date(date, 143, '-')
+//    08-28-1991 13:10
+
+dateFn.date(date, 108)
 //      Wed Aug 28 1991
 
-dateFn.date(date, 120)
+dateFn.date(date, 110)
+//     Aug 28, 1991
+
+dateFn.date(date, 5)
 //     1:10:10 PM
 
-dateFn.date(date, 121)
+dateFn.date(date, 6)
 //     13:10:10
 
 
@@ -26,6 +33,14 @@ dateFn.date(date, 121)
 
 | Code 	| Response   	            |
 |------	|-------------------	    |
+| 143   | 1991/08/28 1:10:10 PM 	|
+| 144  	| 1991/08/28 13:10:10       |
+| 145  	| 1991/08/28 1:10 PM   	    |
+| 146  	| 1991/08/28 13:10     	    |
+| 147   | 1991/28/08 1:10:10 PM 	|
+| 148  	| 1991/28/08 13:10:10       |
+| 149  	| 1991/28/08 1:10 PM   	    |
+| 150  	| 1991/28/08 13:10     	    |
 | 151   | 08/28/91 1:10:10 PM 	    |
 | 152  	| 08/28/91 13:10:10   	    |
 | 153  	| 08/28/91 1:10 PM    	    |
@@ -52,8 +67,8 @@ dateFn.date(date, 121)
 | 174  	| 28 Aug 1991 13:10    	    |
 | 175   | Wed Aug 28 1991 1:10:10 PM|
 | 176  	| Wed Aug 28 1991 13:10:10  |
-| 178  	| Wed Aug 28 1991 1:10 PM   |
-| 179  	| Wed Aug 28 1991 13:10     |
+| 177  	| Wed Aug 28 1991 1:10 PM   |
+| 178  	| Wed Aug 28 1991 13:10     |
 
 
 ### Code for Date
@@ -76,7 +91,7 @@ dateFn.date(date, 121)
 
 | Code 	| Response   	|
 |------	|------------	|
-| 5   | 1:10:10 PM 	|
+| 5     | 1:10:10 PM 	|
 | 6  	| 13:10:10   	|
 | 7  	| 1:10 PM    	|
 | 8  	| 13:10      	|

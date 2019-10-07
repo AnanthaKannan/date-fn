@@ -1,6 +1,22 @@
 const { date } = require('../router');
 let date_ =  "1991-08-28 13:10:10";
 
+test('code143', () => expect(date(date_, 143)).toBe('1991/08/28 1:10:10 PM') );
+
+test('code144', () => expect(date(date_, 144)).toBe('1991/08/28 13:10:10') );
+
+test('code145', () => expect(date(date_, 145)).toBe('1991/08/28 1:10 PM') );
+
+test('code146', () => expect(date(date_, 146)).toBe('1991/08/28 13:10') );
+
+test('code147', () => expect(date(date_, 147)).toBe('1991/28/08 1:10:10 PM') );
+
+test('code148', () => expect(date(date_, 148)).toBe('1991/28/08 13:10:10') );
+
+test('code149', () => expect(date(date_, 149)).toBe('1991/28/08 1:10 PM') );
+
+test('code150', () => expect(date(date_, 150)).toBe('1991/28/08 13:10') );
+
 test('code151', () => expect(date(date_, 151)).toBe('08/28/91 1:10:10 PM') );
 
 test('code152', () => expect(date(date_, 152)).toBe('08/28/91 13:10:10') );
