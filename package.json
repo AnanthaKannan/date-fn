@@ -7,6 +7,10 @@
     "test": "jest",
     "start": "nodemon index"
   },
+  "repository": {	
+    "type": "git",
+    "url": "https://github.com/AnanthaKannan/date-fn.git"
+  },
   "keywords": [
     "date-fn"
   ],
